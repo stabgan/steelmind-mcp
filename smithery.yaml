@@ -1,0 +1,48 @@
+name: steelmind-mcp
+version: 2.0.0
+description: Research-grounded metacognitive reasoning tools for LLM agents
+
+image:
+  name: ghcr.io/stabgan/steelmind-mcp
+  tag: latest
+
+entrypoint: ["node", "dist/cli.js"]
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+    required: []
+  commandFunction: |
+    function getCommand(config) {
+      return {
+        command: "node",
+        args: ["dist/cli.js"],
+        env: {},
+      };
+    }
+
+build:
+  dockerfile: Dockerfile
+  dockerBuildPath: "."
+
+publish:
+  smithery: true
+  dockerhub:
+    enabled: true
+    username: stabgan
+    repository: steelmind-mcp
+
+documentation:
+  description: |
+    Steelmind MCP adds structured metacognitive reasoning to any AI agent.
+    Two tools — think and verify — encode research-grounded cognitive frameworks
+    (Socratic questioning, steel-manning, dialectical challenge) into tool descriptions
+    that serve as cognitive scaffolds. Backed by 43+ research papers.
+  usage: |
+    This MCP server provides two tools:
+    - think: Record a structured reasoning step with Socratic self-questioning
+    - verify: Challenge your reasoning with steel-manning before committing
+    No API keys or configuration required.
+  link: https://github.com/stabgan/steelmind-mcp

@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.git
+.github
+.kiro
+*.log
+*.md
+src/__tests__
+vitest.config.ts
+.DS_Store
