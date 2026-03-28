@@ -29,10 +29,6 @@ build:
 
 publish:
   smithery: true
-  dockerhub:
-    enabled: true
-    username: stabgandocker
-    repository: steelmind-mcp
 
 documentation:
   description: |
