@@ -1,6 +1,7 @@
 {
   "name": "@stabgan/steelmind-mcp",
-  "version": "2.0.0",
+  "version": "2.0.1",
+  "mcpName": "io.github.stabgan/steelmind",
   "description": "Research-grounded metacognitive reasoning tools for AI agents. Structured step-by-step thinking with steel-manning verification via MCP. Combines sequential decomposition with cognitive science frameworks. Backed by 43+ papers.",
   "type": "module",
   "main": "dist/index.js",
