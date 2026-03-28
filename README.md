@@ -1,7 +1,7 @@
 # Steelmind MCP — Structured Thinking & Verification for AI Agents
 
 [![npm version](https://img.shields.io/npm/v/@stabgan/steelmind-mcp)](https://www.npmjs.com/package/@stabgan/steelmind-mcp)
-[![GHCR](https://img.shields.io/badge/ghcr.io-stabgan%2Fsteelmind--mcp-blue)](https://github.com/stabgan/steelmind-mcp/pkgs/container/steelmind-mcp)
+[![Docker](https://img.shields.io/docker/v/stabgan/steelmind-mcp?label=docker)](https://hub.docker.com/r/stabgan/steelmind-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **The research-grounded reasoning MCP server for AI agents.** Combines step-by-step sequential thinking with steel-manning verification — backed by 43+ cognitive science and AI research papers.
@@ -50,7 +50,7 @@ The code is minimal. The descriptions do the heavy lifting — tool descriptions
   "mcpServers": {
     "steelmind": {
       "command": "docker",
-      "args": ["run", "--rm", "-i", "ghcr.io/stabgan/steelmind-mcp"]
+      "args": ["run", "--rm", "-i", "stabgan/steelmind-mcp"]
     }
   }
 }
